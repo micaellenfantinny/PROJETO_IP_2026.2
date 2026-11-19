@@ -1,2 +1,7 @@
-# PROJETO_IP_2026.2
-Este repositório contém o projeto desenvolvido para a disciplina de Introdução a Computação, componente ofertado pelo Centro de Informática da UFPE, utilizando os conceitos aprendidos em Python.
+🎮 CIn Surfers
+
+Projeto desenvolvido para a disciplina de Introdução à Programação, do Centro de Informática (CIn) da Universidade Federal de Pernambuco (UFPE), no semestre 2026.2.
+
+👥 Equipe
+
+Integrante
