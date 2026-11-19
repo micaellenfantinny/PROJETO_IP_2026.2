@@ -1,7 +1,14 @@
-🎮 CIn Surfers
 
-Projeto desenvolvido para a disciplina de Introdução à Programação, do Centro de Informática (CIn) da Universidade Federal de Pernambuco (UFPE), no semestre 2026.2.
+# 🎮 CIn Surfers
 
-👥 Equipe
+## 👥 Equipe
 
-Integrante
+| Integrante | Credenciais |
+|------------|--------|
+| Ana Helena Notaro | <ahman>  |
+| Ana Julia Andrade | <ajsa>   |
+| Melina Dias       | <mdp>    |  
+| Micaellen Fantinny| <mflc2>  |
+| Vicente Scripnick | <vls2>   |
+
+---
