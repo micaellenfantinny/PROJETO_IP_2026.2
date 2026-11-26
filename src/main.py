@@ -1,10 +1,11 @@
 import pygame
 from pygame.locals import *
 from sys import exit
-from menu import Botao
+from menu import Menu
 
 pygame.init()
 
+# config de tela
 largura = 1050
 altura = 730
 
@@ -14,16 +15,8 @@ pygame.display.set_caption('CIn Surfers')
 capa =  pygame.image.load("assets/backgrounds/capa_claro.png")
 capa = pygame.transform.scale(capa, (largura, altura))
 
-# tamanho dos botões
-largura_botao = 300
-altura_botao = 55
-
-x = largura - largura_botao - 100
-
-jogar = Botao("JOGAR", x, 225, largura_botao, altura_botao)
-instrucoes = Botao("INSTRUÇÕES", x, 300, largura_botao, altura_botao)
-creditos = Botao("CRÉDITOS", x, 375, largura_botao, altura_botao)
-sair = Botao("SAIR", x, 450, largura_botao, altura_botao)
+# menu
+menu = Menu(largura)
 
 while True:
     for event in pygame.event.get():
@@ -31,12 +24,21 @@ while True:
             pygame.quit()
             exit()
 
+        if menu.sair.click(event):
+            pygame.quit()
+            exit()
+
+        if event.type == KEYDOWN:
+            if event.key == K_ESCAPE:
+                pygame.quit()
+                exit()
+
     tela.blit(capa, (0, 0))
 
-    jogar.bordas_caixa(tela)
-    instrucoes.bordas_caixa(tela)
-    creditos.bordas_caixa(tela)
-    sair.bordas_caixa(tela)
+    menu.jogar.bordas_caixa(tela)
+    menu.instrucoes.bordas_caixa(tela)
+    menu.creditos.bordas_caixa(tela)
+    menu.sair.bordas_caixa(tela)
 
     pygame.display.update()
 
