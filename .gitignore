@@ -2,6 +2,4 @@
 __pycache__/
 *.pyc
 
-{
-    "python-envs.defaultEnvManager": "ms-python.python:system"
-}
+.vscode/
