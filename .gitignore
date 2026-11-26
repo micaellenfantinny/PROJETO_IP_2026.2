@@ -1,3 +1,7 @@
 # Arquivos de cache do Python
 __pycache__/
 *.pyc
+
+{
+    "python-envs.defaultEnvManager": "ms-python.python:system"
+}
